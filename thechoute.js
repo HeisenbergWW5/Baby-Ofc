@@ -128,13 +128,7 @@ const sleep = async (ms) => {
 
 const img = ['admin', 'ban', 'cowner', 'Faketumber', 'imagen', 'imgregla', 'M18', 'multimedia', 'TikTok', 'uwu']
 const imgramdon = img[Math.floor(Math.random() * img.length)]
-//CREADOR
-const yo = `𝕿𝖍ٌ𝖊𝕮𝖍𝖔𝖚𝖙𝖊`
-const Githu = 'https://github.com/thechoute'
-const Youtube = 'https://www.youtube.com/c/thechout'
-const WhatsApp = '18299897014'
-const instagram = 'https://www.instagram.com/the_choute_/'
-const WGrupo = 'https://chat.whatsapp.com/H6n4BdMISuyC12zUEVL08n'
+
 
 //══════════════════ FUNCION DE REGISTRO ════════════════════════════════════\\
 const getRegisteredRandomId = () => {
@@ -183,10 +177,9 @@ const getRegisteredRandomId = () => {
     ppimg = 'https://i.ibb.co/gDJ29Jt/Baby-Foto-Perfil.jpg'}  
     
      teks = 
-  `😙Hola, @${num.split('@')[0]}
+  `Hola, @${num.split('@')[0]}
   Bienvenido a ${mdata.subject}
-    
-  Esperemos la pases bien y te guste el grupo.
+  
   Recuerda siempre seguir las reglas y mantener una formalidad respetuosa`
   
     let fotoP = await getBuffer(ppimg)
@@ -215,8 +208,7 @@ const getRegisteredRandomId = () => {
   `👑 *NUEVO ADMIN* 👑
   👤 *Nombre:* @${num.split('@')[0]}
   📋 *INFO:* ${thu.status}
-  🌎 *Grupo:* ${mdata.subject}
-  *Felicitaciones eres uno de los administradores.*`
+  🌎 *Grupo:* ${mdata.subject}`
    let buff = await getBuffer(ppimg)
     leo.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
     } else if (anu.action == 'demote') {
@@ -231,8 +223,7 @@ const getRegisteredRandomId = () => {
   `❌ *ADMIN MENOS* ❌
   👤 *Nombre:* @${num.split('@')[0]}
   📋 *INFO:* ${thu.status}
-  🌎 *Grupo:* ${mdata.subject} 
-  *F chota ya no eres administrador.*`
+  🌎 *Grupo:* ${mdata.subject}`
     let buff = await getBuffer(ppimg)
   leo.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
   
@@ -250,7 +241,7 @@ key : {
                     },
    message: {
                 liveLocationMessage: {
-                caption: `🔥🔥𝕿𝖍ٌ𝖊  𝕮𝖍𝖔𝖚𝖙𝖊🔥🔥`,
+                caption: `Heisenberg`,
                 jpegThumbnail: fs.readFileSync('./media/imagen/youtube-mi.jpg'),
                       }
                     }
@@ -367,7 +358,7 @@ isCharge: "" || false
         }
       }
     }
-    leo.sendMessage(id, {name: "𝕭𝖔𝖙-𝕿𝖍ٌ𝖊𝕮𝖍𝖔𝖚𝖙𝖊 𝕺𝕱𝕮", address: "", jpegThumbnail: fs.readFileSync('./media/imagen/Faketumber.jpg'), }, MessageType.text, opción)}
+    leo.sendMessage(id, {name: "Heisenberg Bot", address: "", jpegThumbnail: fs.readFileSync('./media/imagen/Faketumber.jpg'), }, MessageType.text, opción)}
  
   const isUrl = (url) => {return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)/, 'gi'))}
 
@@ -417,7 +408,7 @@ const command = comm
   const q = args.join(' ')
   const soyYo = leo.user.jid
   const botNumber = leo.user.jid.split("@")[0]
-  const ownerNumber  = "18299897014@s.whatsapp.net"
+  const ownerNumber  = "528134075019@s.whatsapp.net"
   const isGroup = from.endsWith('@g.us')
   const sender = choute.key.fromMe ? leo.user.jid : isGroup ? choute.participant : choute.key.remoteJid
   const senderNumber = sender.split("@")[0]
@@ -789,42 +780,40 @@ const chr = {
 
 
 const texto11 = `
-╭━─━─≪☁️≫─━─━╮
+╭━─━─≪≫─━─━╮
           ✧☆∵✧☆  
           «${yo}☁︎»    
           ✧☆∵✧☆
-╰━─━─☾︎🌊☽︎─━─━╯`
+╰━─━─☾︎☽︎─━─━╯`
 const cmenu = `
-╔╦══• •✠•❀•✠ • •══╦╗
-    🇯🇵💮 𝕿𝖍ٌ𝖊𝕮𝖍𝖔𝖚𝖙𝖊 💮🇯🇵 
-╚╩══• •✠•❀•✠ • •══╩╝
-▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀
-Buenas tardes🌇 _@${sender.split('@')[0]}_
-▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀
+╔╦══•  •✠•❀•✠ •  •══╦╗
+La caravana del Carding
+╚╩══•  •✠•❀•✠ •  •══╩╝
+Buenas tardes _@${sender.split('@')[0]}_
 ||- *_-DATOS DEL USUARIO-_*
 [💈] Usuario: _@${sender.split('@')[0]}_
-[💈] XP: _${getLevelingXp(sender)}_
-[💈] Nivel: _${getLevel1}_
 ||- *_-INFO DEL GRUPO-_*
 [💈] Nombre: _${groupMetadata.subject}_
 [💈] Administradores: _${groupAdmins.length}_
-[💈] Miembros: _${groupMembers.length - groupAdmins.length }_
-[💈] Total de Participantes: _${groupMembers.length}_
-||- *_-INFO DEL BOT-_*
-[💈] Creador: @${ownerNumber.split('@')[0]}
-[💈] Prefijo: "${prefix}"
-[💈] Estado del Bot: ${estadop}
-[💈] Hora: ${jm}
-[💈] Velocidad: ${process.uptime()} 
-[💈] Usuarios Registrados: ${_registered.length}
-[💈] Usuarios Baneados: ${ban.length}
-[💈] Chat Totales: ${totalchat.length}
-[💈] Hora: ${hora}
-[💈] Fecha: ${week1}  ${calender1}
-[💈] Dispositivo: _${leo.user.phone.device_manufacturer}_
-[💈] Servidor: ${leo.browserDescription[0]}
-[💈] Version de WhatsApp: ${leo.browserDescription[2]}
-[💈] Navedador: ${leo.browserDescription[1]}
+||- *_-Menu-_*
+[💳] VENTA DE MATE
+[💳] Debito  x $400
+[💳] Credito x $500
+[💳] Amex    x $600
+
+[💳] COMBOS
+[💳] 1 Credito 2 Debitos x1200
+[💳] 2 Credito 1 Debito  x1400
+[💳] 2 Credito 2 Debitos x1600
+
+[💳] LOTES
+[💳] 10 Debitos  x 2500
+[💳] 10 Mixtas   x 2700
+[💳] 10 Creditos x 3000
+[💳] 20 Mixtas   x 4500
+[💳] 50 Mixtas   x 12000
+[💳] 100 Mixtas  x 20000
+
 ||- *_-LISTA DE MENUS-_*
 [💈] ${prefix}menugrupo
 [💈] ${prefix}menuadmin
@@ -843,19 +832,14 @@ const nivel = `
 🎖️ *Nivel* : ${nivelActual} ⏭️ ${getLevelingLevel(sender)}
 ✨ XP: ${getLevelingXp(sender)} / ${getLevelingXp(sender)}` 
 const texto = `⚊⚊⚊⚊⚊✬✥✬⚊⚊⚊⚊⚊}
-      ༻▫️ 𝒯𝒽𝑒 𝒞𝒽𝑜𝓊𝓉𝑒 ▫️༺
+      ༻▫️ Heisenberg ▫️༺
 ⚊⚊⚊⚊⚊✬✥✬⚊⚊⚊⚊⚊
 • • • • • • • • •「◆」• • • • • • • • •
 _Si el bot presenta algun fallo, notificarlo a @${ownerNumber.split('@')[0]}_
 • • • • • • • • • • • • • • • • • • • • •`
 
 const base = `INFO DE MI CREADOR
-*Youtube:*
-https://www.youtube.com/channel/UC-HPutaDGeTPjrCId0bXQgg?sub_confirmation=1
-*Instagram:*
-https://www.instagram.com/the_choute_/
-*Github:*
-https://github.com/Thechoute`
+Heisenberg`
 
 const infobot =`||- *_-DATOS DEL BOT-_*
 [📱] Creador: @${ownerNumber.split('@')[0]}
@@ -882,10 +866,7 @@ const infobot =`||- *_-DATOS DEL BOT-_*
 `
 const infocreador = `${timeFt} @${sender.split('@')[0]}
 _Acontinuacion te muestro, mi creador, de preferencia solo hablare si necesitas algo :D_
-☎️ *Número* : @${ownerNumber.split("@")[0]}
-🌐 *Instagram* : ${instagram}
-🌐 *Github:* ${Githu}
-🌐 *Youtube:* youtube.com/c/thechout`
+☎️ *Número* : @${ownerNumber.split("@")[0]}`
 
 const registro = `
 *PORFAVOR ESCRIBE BIEN EL FORMATO DE REGISTRO:* 
@@ -984,26 +965,14 @@ if (choute.message.buttonsResponseMessage){
 test = choute.message.buttonsResponseMessage.selectedButtonId
 if (test.includes(`grupo`)){
   leo.sendMessage(from, `
-  *-Te invito a unirte al grupo de WhatsApp donde:-*
-  
-  💭:Se avisa sobre nuevas actualizaciones 
-  
-  💭:Puedes probar tu propio bot
-  
-  💭:Se ayuda a quienes tengas problemas
-  
-  Grupo 1 : 
-  _https://chat.whatsapp.com/H6n4BdMISuyC12zUEVL08n_
-  
-  Grupo 2 : 
-  _https://chat.whatsapp.com/GQnptaCf21IEvLJ69RPT4a_`, MessageType.text, {quoted: choute})
+`, MessageType.text, {quoted: choute})
   addFilter(from)
     addLevelingLevel(sender, 5)	}}
 
 if (choute.message.buttonsResponseMessage){
 test = choute.message.buttonsResponseMessage.selectedButtonId
 if (test.includes(`nuevo`)){
-  fansh = leo.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 0, "totalAmount1000" : '1000', "message": `${nuevo}\n\n\nCreador is 𝕿𝖍ٌ𝖊𝕮𝖍𝖔𝖚𝖙𝖊`, "footerText": "*𝕿𝖍ٌ𝖊𝕮𝖍𝖔𝖚𝖙𝖊*", "thumbnail": fs.readFileSync('./media/imagen/Faketumber.jpg'), "surface": 'CATALOG', "orderTitle": 'Sexo'}}, {contextInfo: { mentionedJid: [sender, ownerNumber]}, quoted:choute, })
+  fansh = leo.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 0, "totalAmount1000" : '1000', "message": `${nuevo}\n\n\nCreador is Heisenberg`, "footerText": "*𝕿𝖍ٌ𝖊𝕮𝖍𝖔𝖚𝖙𝖊*", "thumbnail": fs.readFileSync('./media/imagen/Faketumber.jpg'), "surface": 'CATALOG', "orderTitle": 'Sexo'}}, {contextInfo: { mentionedJid: [sender, ownerNumber]}, quoted:choute, })
   leo.relayWAMessage(fansh)
   addFilter(from)
     addLevelingLevel(sender, 5)	}}
